@@ -1,0 +1,22 @@
+.container {
+    max-width: 50%;
+    margin:auto;
+    padding: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.consultor-simples{
+    border: 2px solid #494994;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: silver;
+}

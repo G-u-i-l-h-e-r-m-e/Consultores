@@ -1,0 +1,25 @@
+.consultor-card{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.consultor-card h2{
+    color: #007bff;  
+}
+.consultor-imagem{
+    width: 6vw;
+    height: 11vh;
+    border-radius: 50%;
+    border: 1px solid;
+    position: relative;
+    margin-top: -60px;
+    background-color: black;
+}
