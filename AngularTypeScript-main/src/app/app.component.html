@@ -1,21 +1,16 @@
 <header>
-  <h1>{{ nomeDaEmpresa }}</h1>
-  <p>Conheça nossos especialistas</p>
+  <h1>{{nomeDaEmpresa}}</h1>
+    <p>Conheça nossos especialistas</p>
 </header>
 
 <div>
-  <input
-    type="text"
-    [(ngModel)]="filtroEspecialidade"
-    placeholder="Filtrar por especialidade"
-    (keyup.enter)="filtrarConsultores()"
-  >
-  <button class="btnPesquisar" (click)="filtrarConsultores()">Pesquisar</button>
+  <input type="text" id="pesquisaConsultor">
+  <button class="btnPesquisar">Pesquisar</button>
 </div>
 
 <div class="container">
-  <ng-container *ngFor="let consultor of consultoresFiltrados">
-    <app-consultor [Consultor]="consultor"></app-consultor>
-  </ng-container>
+<app-consultor
+  *ngFor = "let consultor of consultores"
+  [Consultor]="consultor"
+/>
 </div>
-
