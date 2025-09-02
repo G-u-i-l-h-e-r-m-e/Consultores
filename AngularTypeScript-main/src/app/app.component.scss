@@ -1,11 +1,14 @@
 .container {
-    max-width: 50%;
+    max-width: 60%;
     margin:auto;
     padding: 20px;    
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+.container .consultor-card{
+    margin: 20px;
 }
 
 header{
@@ -19,4 +22,19 @@ header{
     border-radius: 8px;
     padding: 20px;
     background-color: silver;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pesquisa input{
+    height: 20px;
+    border-radius: 8px;
+}
+.btnPesquisar{
+    height: 25px;
+    width: 150px;
+    border-radius: 8px;
 }
