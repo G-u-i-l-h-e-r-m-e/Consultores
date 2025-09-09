@@ -1,0 +1,8 @@
+<h2>Pai</h2>
+<p> Nome do pai: {{nome()}} </p>
+
+<app-child [nomeRecebido]="nome()"></app-child>
+
+<h2>Filho > Pai</h2>
+<p>Receber mensagem: {{mensagemDoFilho()}}</p>
+<app-child (enviarMensagem)="receberMensagem($event)"></app-child>

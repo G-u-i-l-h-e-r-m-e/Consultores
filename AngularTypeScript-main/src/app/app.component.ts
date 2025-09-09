@@ -4,13 +4,14 @@ import { ConsultorComponent } from "./consultor/consultor.component";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';  
 import { ConsultorService } from './services/consultor.service';
+import { ParentComponent } from './parent/parent.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],  
   standalone: true,                      
-  imports: [ConsultorComponent, CommonModule, FormsModule] 
+  imports: [ConsultorComponent, CommonModule, FormsModule, ParentComponent] 
 })
 export class AppComponent implements OnInit {
   nomeDaEmpresa: string = 'TechConsult Solutions';
