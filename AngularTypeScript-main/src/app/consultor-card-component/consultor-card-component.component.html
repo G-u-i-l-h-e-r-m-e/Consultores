@@ -1,0 +1,16 @@
+<article class="card" [ngClass]="{ ativo: consultor().ativo, inativo: !consultor().ativo }">
+    <header>
+      <h3>{{ consultor().nome }}</h3>
+      <small>{{ consultor().email }}</small>
+    </header>
+
+    <p class="esp">{{ consultor().especialidade }}</p>
+
+    <p class="status">
+      Status: <strong>{{ consultor().ativo ? 'Ativo' : 'Inativo' }}</strong>
+    </p>
+
+    <button type="button" (click)="solicitarToggle()">
+      {{ consultor().ativo ? 'Desativar' : 'Ativar' }}
+    </button>
+  </article>
